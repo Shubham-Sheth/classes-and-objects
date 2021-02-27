@@ -1,0 +1,49 @@
+    import java.util.Scanner;
+    class Employee
+    {
+        int address;
+        String Name;
+        int year;
+        long Salary;
+
+        void GetData()           // Defining GetData()
+        {
+
+            Scanner sc = new Scanner(System.in);
+
+            System.out.print("\n\tEnter Employee address : ");
+            address = Integer.parseInt(sc.nextLine());
+
+            System.out.print("\n\tEnter Employee Name : ");
+            Name = sc.nextLine();
+
+            System.out.print("\n\tEnter Employee year : ");
+            year = Integer.parseInt(sc.nextLine());
+
+            System.out.print("\n\tEnter Employee Salary : ");
+            Salary = Long.parseLong(sc.nextLine());
+
+        }
+
+        void PutData()           // Defining PutData()
+        {
+
+            System.out.print("\n\tEmployee address : "+address);
+            System.out.print("\n\tEmployee Name : "+Name);
+            System.out.print("\n\tEmployee year : "+year);
+            System.out.print("\n\tEmployee Salary : "+Salary);
+
+        }
+
+        public static void main(String args[])
+        {
+
+            Employee E = new Employee();// Creating Object
+
+            E.GetData();          // Calling GetData()
+            E.PutData();          // Calling PutData()
+
+        }
+    }
+
+  
